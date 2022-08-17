@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
+const mongoose=require("mongoose");
+
 const jobSchema=mongoose.Schema({
     id:{
         type:mongoose.Schema.Types.ObjectId,
@@ -28,4 +29,4 @@ const jobSchema=mongoose.Schema({
     }
 });
 const job=mongoose.model("Job",jobSchema);
-export default job;
+module.exports=job

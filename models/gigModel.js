@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose=require("mongoose");
 const gigSchema=mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
@@ -96,5 +96,7 @@ image:{
 },
 
 });
+
 const gig=mongoose.model("Gig",gigSchema);
-export default gig;
+  module.exports=gig;
+  

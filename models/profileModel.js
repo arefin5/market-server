@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 const profileSchema=mongoose.Schema({
     name:{
         type:mongoose.Schema.Types.ObjectId,
@@ -24,4 +24,4 @@ const profileSchema=mongoose.Schema({
     }
 });
 const profile=mongoose.model("Profile",profileSchema);
-export default profile;
+module.exports=profile;
